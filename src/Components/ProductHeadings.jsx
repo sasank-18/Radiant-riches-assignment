@@ -5,16 +5,16 @@ import { path } from "../constant";
 
 const ProductHeadings = () => {
   return (
-    <div className=" h-auto w-full py-4 pt-6 font-semibold text-xl md:text-3xl lg:text-4xl">
+    <div className=" h-auto w-full py-4 pt-6 font-semibold text-2xl md:text-3xl lg:text-4xl">
       <div className="py-2">{tagLine}</div>
       <hr className="h-px my-1 bg-gray-100 border-0 dark:bg-gray-300" />
-      <div className="scrollbar flex justify-between  items-center gap-x-2  text-xs whitespace-nowrap  overflow-x-scroll  text-gray-600 md:text-sm">
+      <div className="scrollbar flex justify-between  items-center gap-x-2  text-sm whitespace-nowrap  overflow-x-scroll  text-gray-600 md:text-sm">
         <div className="flex  justify-start  items-center gap-x-3 md:gap-x-6 ">
           {topRelevant.map((data) => (
             <>
               <div className="flex px-3 justify-center  items-center gap-x-2">
                 <img className="w-5 h-10 " src={data.imgURL} />
-                <p className="">{data.txt}</p>
+                <p className="text-sm">{data.txt}</p>
               </div>
             </>
           ))}
@@ -33,7 +33,7 @@ const ProductHeadings = () => {
           </>
         ))}
       </div>
-      <div className="flex py-2   justify-start  items-center gap-x-2  text-xs whitespace-nowrap  overflow-x-scroll scrollbar text-gray-600 md:text-sm">
+      <div className="flex py-2   justify-start  items-center gap-x-2  text-xs whitespace-nowrap  overflow-x-scroll scrollbar text-gray-500 md:text-sm">
         {path.map((pah, index) => (
           <>
             <div>

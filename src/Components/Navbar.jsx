@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className="bg-black px-8 lg:px-10  h-16 flex justify-between lg:justify-center items-center">
       <input
-        className="py-1 rounded-lg pl-4 outline-none relative  text-lg font-medium lg:w-[40vw]  w-screen"
+        className="py-1 rounded-lg pl-4 outline-none relative  text-lg font-medium lg:w-[40vw]  w-[100%]"
         type="text"
       />
 
@@ -21,11 +21,11 @@ const Navbar = () => {
           src={toggleSidebar ? `${xmark}` : `${bar}`}
         />
         {toggleSidebar && (
-          <ul className=" absolute h-auto w-56 flex flex-col rounded-bl-lg justify-center items-start px-4 py-6 gap-6 bg-white shadow-lg top-16 right-0 ">
+          <ul className=" absolute h-auto w-56 flex flex-col rounded-bl-lg justify-center items-start px-4 py-4 gap-3 sm:gap-6 bg-white shadow-lg top-16 right-0 ">
             {navLinks.map((nav) => {
               return (
                 <>
-                  <li className="font-bold text-xl p-2 px-3 rounded-md hover:bg-slate-200 ">
+                  <li className="font-bold text-lg p-2 px-2 rounded-md hover:bg-slate-200 ">
                     {nav.label}
                   </li>
                 </>
