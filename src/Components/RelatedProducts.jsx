@@ -3,11 +3,11 @@ const RelatedProducts = () => {
   return (
     <div className="my-3">
       <h1 className="text-2xl md:text-3xl py-12 font-semibold">Related Deals you might like for </h1>
-      <div className="md:flex lg:justify-center  md:justify-start md:overflow-x-scroll scrollbar    md:gap-14">
+      <div className="md:flex lg:justify-center  md:justify-start md:overflow-x-scroll scrollbar   md:gap-14">
         {relatedProduct.map((product) => {
           return (
             <>
-              <div className="mb-5 min-w-56 lg:w-72   h-auto shadow-md rounded-md">
+              <div className="mb-8 min-w-56 lg:w-72   h-auto shadow-md rounded-md">
                 <div className="p-4 flex justify-center">
                   <img src={product.img} />
                 </div>

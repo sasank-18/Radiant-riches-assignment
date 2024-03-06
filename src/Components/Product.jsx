@@ -6,7 +6,7 @@ const Product = () => {
       {Products.map((product) => {
         return (
           <>
-            <div className="flex shadow-lg lg:flex-row lg:justify-between lg:items-center lg:gap-x-10 flex-col  items-center  h-auto w-[100%] my-8 rounded-md px-10 py-4 lg:py-2 ">
+            <div className="flex shadow-lg lg:flex-row lg:justify-between lg:items-center lg:gap-x-10 flex-col  items-center  h-auto w-[100%] my-8 rounded-md px-5 md:px-10 py-5 lg:py-2 ">
               <div className=" w-100%  lg:w-[24%]  my-4 lg:py-12 rounded-md lg:px-10 px-8 ">
                 <img className="w-80 " src={product?.img} />
                 <h4 className="text-center py-4 text-lg lg:text-xl font-bold">
@@ -68,7 +68,7 @@ const Product = () => {
 
 
               <div className="w-full  lg:w-[18%] ">
-                <div className="flex lg:flex-col lg:justify-end lg:items-center py-4 lg:mb-28 lg:rounded-b-md lg:rounded-t-none  rounded-t-md px-8 bg-blue-50 items-start justify-between">
+                <div className="flex lg:flex-col lg:justify-end lg:items-center py-4 lg:mb-28 lg:rounded-b-md lg:rounded-t-none  rounded-t-md px-4 md:px-8 bg-blue-50 items-start justify-between">
                   <div>
                     <h2 className="text-start lg:text-center font-bold lg:py-3 lg:text-3xl text-xl">
                       {product.rating}

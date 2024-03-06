@@ -4,6 +4,7 @@ import { productType } from "../constant";
 import { path } from "../constant";
 
 const ProductHeadings = () => {
+  
   return (
     <div className=" h-auto w-full py-4 pt-6 font-semibold text-2xl md:text-3xl lg:text-4xl">
       <div className="py-2">{tagLine}</div>
